@@ -8,62 +8,111 @@
 
     <style>
 
-        body {font-family: Georgia; font-size: 20px; align-content: center }
+        body {font-family: Arial; font-size: 19px; align-content: center; padding-left: 9% }
 
         td {padding: 10px}
 
+        a{
+            text-decoration: none;
+            color: #ca983e ;
+        }
+
+        #link1:hover {
+              background: #699bfc; /* Цвет фона под ссылкой */
+              color: white; /* Цвет ссылки */
+          }
+
+
+        #link2:hover {
+            background: #699bfc; /* Цвет фона под ссылкой */
+            color: white; /* Цвет ссылки */
+        }
+
+
+        .tabl1 td{
+
+            padding-bottom: 14px;
+        }
+
+        .tab2 td {
+            padding-bottom: 22px;
+            text-decoration: underline;
+            color: #653308;
+            text-align: center
+        }
+
+
+        input{
+            width: 100px;
+            height: 20px;
+            border-radius: 5px;
+
+        }
 
         #osnova {
             border: solid 5px;
-            width: 1220px;  height: 750px;
+            border-color: #8499a4;
+            border-radius: 10px;
+            background-color: #557482;
+            width: 1220px;  height: 760px;
+            margin-top: 100px;
+            margin-left: 200px;
         }
 
         #hollow {
-            border: solid 5px;
+            border: solid 5px transparent;
             float: left;
             width: 1000px;  height: 35px;
         }
 
         #ris {
-            border: solid 5px;
+            border: solid 5px transparent;
             float: right;
             width: 200px;  height: 80px;
         }
 
         #link1{
-            border: solid 5px;
+            border: solid 5px transparent;
+            background-color: #d9dada;
+            border-radius: 5px 5px 0 0;
+            color: #ca983e;
             float: left;
             width: 185px;  height: 35px;
         }
 
         #link2{
-            border: solid 5px;
+            border: solid 5px transparent;
+            border-radius: 5px 5px 0 0;
+            background-color: #b3b3b3;
             float: left;
             width: 185px;  height: 35px;
         }
 
         #titul {
-            border: solid 5px;
+            border: solid 5px transparent;
             float: right;
             width: 610px;  height: 35px;
         }
 
         #text {
-            border: solid 5px;
+            border: solid 5px ;
+            border-color: #d9dada;
+            background-color: #d9dada;
+            border-radius: 0px 5px 5px 5px;
             float: left;
             width: 1210px;  height: 630px;
 
         }
 
                 #text1 {
-                    border: solid 5px;
+                    border: solid 5px transparent;
                     float: left;
                     width: 595px;  height: 620px;
                 }
 
 
                 #text2 {
-                    border: solid 5px;
+                    border: solid 5px transparent;
                     float: left;
                     width: 595px;  height: 620px;
             }
@@ -88,45 +137,63 @@
 <div id="osnova">
 
     <div id="hollow">        </div>
-    <div id="ris">        </div>
-    <div id="link1" style="text-align: center; font-size: 25px"> Подбор        </div>
-    <div id="link2" style="text-align: center; font-size: 25px"> Проверка   </div>
-    <div id="titul" style="text-align: right; font-size: 30px"> Подбор конденсаторов       </div>
+    <div id="ris" style="align-content:center"> <p></p>  <img src="sova.png">    </div>
+    <div id="link1" style="text-align: center; font-size: 25px; color: #ca983e"> <b>
+        <a href="sova.png"> Подбор <a/></b>   </div>
+    <div id="link2" style="text-align: center; font-size: 25px">    <b>
+        <a href="ris%20.bmp" style="color: white"> Проверка</a> </b>   </div>
+    <div id="titul" style="text-align: right; font-size: 30px; color: #e6e6e6">  <b>Подбор конденсаторов </b>       </div>
 
 
     <div id="text">
 
 
         <div id="text1">
+            <p>
+            <table class="tabl1"; style="color: #808080">
+                <tr> <td>  Производителность, кВт:  </td>   <td> <input type="text">  </td>           </tr>
 
-            <table>
-                <tr> <td>  Производителность, кВт:  </td>              </tr>
+                <tr> <td>  Уровень звурового давления, дБ:  </td>        <td> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Уровень звурового давления, дБ:  </td>              </tr>
+                <tr> <td>  Расстояние от источника шума, м:  </td>        <td> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Расстояние от источника шума, м:  </td>              </tr>
+                <tr> <td>  Фреон  </td>       <td> <input type="text">  </td>        </tr>
 
-                <tr> <td>  Фреон  </td>              </tr>
+                <tr> <td>  Температура воздуха, &#176;С:  </td>        <td> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Температура воздуха, &#176;С:  </td>              </tr>
+                <tr> <td>  Температура конденсации, &#176;С:  </td>       <td> <input type="text">  </td>        </tr>
 
-                <tr> <td>  Температура конденсации, &#176;С:  </td>              </tr>
+                <tr> <td>  Температурный напор (∆ Т), К:  </td>        <td> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Температурный напор (∆ Т), К:  </td>              </tr>
+                <tr> <td>  Высота над уровнем моря, м: </td>        <td> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Высота над уровнем моря, м: </td>              </tr>
+                <tr> <td>  Перегрев (∆ Th),К:  </td>       <td> <input type="text">  </td>        </tr>
 
-                <tr> <td>  Перегрев (∆ Th),К:  </td>              </tr>
+                <tr> <td style="padding-bottom: 0px">  Опоры для горизонтальной установки  </td>        <td style="padding-bottom: 0px"> <input type="text">  </td>       </tr>
 
-                <tr> <td>  Опоры для горизонтальной установки  </td>              </tr>
+                <tr><td>  </td> <td> <p style="width: 100px;
+                            height: 30px;
+                            background-color: #699bfc;
+                            color: white;
+                            border-radius: 5px;
+                            text-align: center;
+                            border-color:white;
+                            border: solid 2px;
+                            padding-top: 10px">
 
-
+                                    <b>Выбрать</b></p></td>   </tr>
 
 
             </table>
 
 
+
         </div>
+
+
+
+
+
 
           <!--  <div id="vibor">        </div>   может позже пригодиться
             <div id="knopka">        </div>  -->
@@ -134,10 +201,10 @@
 
         <div id="text2">
 
-            <table class=" tabl" align="center" style="text-align: center">
+            <table class=" tab2" align="center">
 
 
-                <tr> <td> МОДЕЛЬ </td> <td> Мощьность, кВт </td> <td> Запас,% </td> <td> Шум, дБ </td> <td> Цена, э </td></tr>
+                <tr style="color: #567481 font-weight: 400"> <td style="color: #567481"> МОДЕЛЬ </td> <td style="color: #567481"> <u>Мощьность, кВт</u> </td> <td style="color: #567481"><u> Запас,%</u> </td> <td style="color: #567481"><u> Шум, дБ </u></td> <td style="color: #567481"> <u>Цена, э</u> </td></tr>
 
                 <tr> <td> ACH 163C D </td> <td> 50.00 </td> <td>0.00 </td> <td> 50 </td> <td> 1925 </td></tr>
 
@@ -170,7 +237,7 @@
     </div>
 
 
-    <div id="footer" style="text-align: center">  &#169; Защита прав  бла бла бла      </div>
+    <div id="footer" style="text-align: center; color: #e6e6e6">  &#169; Защита прав  бла бла бла      </div>
 </div>
 
 
